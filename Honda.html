@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- ues -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style-honda.css" />
+    <script src="javascript/java-honda.js" defer></script>
+    <link rel="icon" href="Images/logo honda.png" type="Image/x-icon">
+    <title>HONDA</title>
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid" id="nav1">
+        <!-- <a class="navbar-brand" href="#">
+          <img src="Images/a1.png" alt="" width="30" height="24">
+        </a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                brand
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="Index.html"
+                    >ALL</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="Honda.html"
+                    >Honda</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="kawasaki.html" target="_blank">kawasaki</a></li>
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#content-title">collection</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section-title">assesories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-title">contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" target="_blank"
+                >about</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" id="fm">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success text-white" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- start slider -->
+    
+  
+    <div class="vd-honda" id="vd-honda">
+     
+      <video src="https://www.ncxhonda.com/motorcycles/storage/app/uploads//TVC/Desktop/025NCX-DREAM_desktop_smallest02.m4v" autoplay muted loop></video>
+    </div>
+   
+    <!-- start content  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <div class="container">
+      <div class="content-title" id="content-title">
+        <section id="content-title">
+          <h2>Collection Arrived</h2>
+        </section>
+      </div>
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="active" data-name="all">Show all</button>
+        <button data-name="phone">Top Popular</button>
+        <button data-name="clothse">Top Selling</button>
+        <button data-name="shoes">Latest Model</button>
+      </div>
+
+      <!-- Images Cards -->
+      <div class="filterable-card">
+        <div
+          class="card"
+          data-name="phone"
+          data-title="Honda Dream"
+          data-daimension="DIMENSIONS"
+          data-price="$ 1599.00"
+          data-image="https://www.ncxhonda.com/motorcycles/storage/app/uploads//Color%20Chart/K3GJ/K3GJ-Black.png"
+          data-description="Weight: 98 Kg (Curb)"
+          data-description2="Power: 125cc "
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.ncxhonda.com/motorcycles/storage/app/uploads//Color%20Chart/K3GJ/K3GJ-Black.png"
+            class="card-img-top"
+            alt="phone"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Honda Dream</h5>
+            <h2>$ 1599.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+        <div
+          class="card"
+          data-name="phone"
+          data-title="Honda GIORNO+"
+          data-price="$ 1599.00"
+          data-image="https://www.ncxhonda.com/motorcycles/storage/app/uploads//Color%20Chart/Giorno%2B%202025/Legendary-GREY.png"
+          data-daimension="DIMENSIONS"
+          data-description="Weight: 118 Kg (Curb)"
+          data-description2="Power: 124.77cc"
+          data-features="Yrea: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.ncxhonda.com/motorcycles/storage/app/uploads//Color%20Chart/Giorno%2B%202025/Legendary-GREY.png "
+            alt="shoes"
+          />
+          <div class="card-body">
+            <h3>Honda GIORNO+</h3>
+            <h2>$ 1599.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          data-name="phone"
+          data-title="CBR150R"
+          data-price="$ 12,999.00"
+          data-image="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Products/CBR150R/Color/Cbr-gray.png"
+          data-daimension="DIMENSIONS"
+          data-description="Weight:	121kg"
+          data-description2="Power: 150cc"
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Products/CBR150R/Color/Cbr-gray.png"
+            alt="phone"
+          />
+          <div class="card-body">
+            <h3>CBR150R</h3>
+            <h2>$ 12,999.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+        <div
+          class="card"
+          data-name="phone"
+          data-title="New CB150R"
+          data-price="$4699.00"
+          data-image="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Color%20Chart/CBF150NR-CA/ColorChat-02.png"
+          data-daimension="DIMENSIONS"
+          data-description="Weight:	124 Kg (Curb)"
+          data-description2="Power:150cc"
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Color%20Chart/CBF150NR-CA/ColorChat-02.png"
+            alt="phone"
+          />
+          <div class="card-body">
+            <h3>New CB150R</h3>
+            <h2>$4699.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          data-name="phone"
+          data-title="Honda rebel"
+          data-price="$2250.00"
+          data-image="Images/Honda Rebel 1100 DCT.png"
+          data-daimension="DIMENSIONS"
+          data-description="Weight:	124Kg"
+          data-description2="Power: 150cc"
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="Images/Honda Rebel 1100 DCT.png"
+            id="meguro-s3-img"
+            alt="phone"
+          />
+          <div class="card-body">
+            <h3>Honda rebel</h3>
+            <h2>$2250.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          data-name="clothse"
+          data-title="Honda SCOOPY"
+          data-price="$ 1,999.00"
+          data-image="https://www.ncxhonda.com/motorcycles/storage/app/uploads//Color%20Chart/Blue.png"
+          data-daimension="DIMENSIONS"
+          data-description="Weight:	94Kg"
+          data-description2="Power: 125cc"
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.ncxhonda.com/motorcycles/storage/app/uploads//Color%20Chart/Blue.png"
+            alt="clothse"
+          />
+          <div class="card-body">
+            <h3>Honda SCOOPY</h3>
+            <h2>$ 1,999.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+        <div
+          class="card"
+          data-name="clothse"
+          data-title="Honda MSX GROM"
+          data-price="$4699.00"
+          data-image="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Color%20Chart/MSX125R-CA/GROM-BLUE.png"
+          data-daimension="DIMENSIONS"
+          data-description="Weight:	124Kg"
+          data-description2="Power: 150cc"
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Color%20Chart/MSX125R-CA/GROM-BLUE.png"
+            alt="clothse"
+          />
+          <div class="card-body">
+            <h3>Honda MSX GROM</h3>
+            <h2>$4699.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+        <div
+          class="card"
+          data-name="clothse"
+          data-title="ZOOMER-X"
+          data-price="$1699.00"
+          data-image="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Products/ZOOMER-X/Color/zoomer-black.png"
+          data-daimension="DIMENSIONS"
+          data-description="Weight:	94Kg"
+          data-description2="Power: 125cc"
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Products/ZOOMER-X/Color/zoomer-black.png"
+            alt="clothse"
+          />
+          <div class="card-body">
+            <h3>ZOOMER-X</h3>
+            <h2>$1699.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+        <div
+          class="card"
+          data-name="clothse"
+          data-title="Honda CLICK160"
+          data-price="$2199.00"
+          data-image="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Color%20Chart/K2SK/K2SK_Black-02.png"
+          data-daimension="DIMENSIONS"
+          data-description="Weight:	94Kg"
+          data-description2="Power: 160cc"
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Color%20Chart/K2SK/K2SK_Black-02.png"
+            alt="clothse"
+          />
+          <div class="card-body">
+            <h3>Honda CLICK160</h3>
+            <h2>$2199.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+        <div
+          class="card"
+          data-name="shoes"
+          data-title="CLICK125"
+          data-price="$2099.00"
+          data-image="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Products/CLICK125i/new%20click125/color/Honda%20NCX%20Click125%20Styling%20Hires%20(2).png"
+          data-daimension="DIMENSIONS"
+          data-description="Weight:	124Kg"
+          data-description2="Power: 125cc"
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Products/CLICK125i/new%20click125/color/Honda%20NCX%20Click125%20Styling%20Hires%20(2).png"
+            alt="shoes"
+          />
+          <div class="card-body">
+            <h3>CLICK125</h3>
+            <h2>$2099.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+        <div
+          class="card"
+          data-name="shoes"
+          data-title="Honda Beat"
+          data-price="$2200.00"
+          data-image="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Products/BeAT/Color/K1AR_Sapphire-Blue.png"
+          data-daimension="DIMENSIONS"
+          data-description="Weight:	94Kg"
+          data-description2="Power: 125cc"
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Products/BeAT/Color/K1AR_Sapphire-Blue.png"
+            alt="shoes"
+          />
+          <div class="card-body">
+            <h3>Honda Beat</h3>
+            <h2>$2200.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+        <div
+          class="card"
+          data-name="shoes"
+          data-title="Honda Dream"
+          data-price="$2250.00"
+          data-image="https://www.ncxhonda.com/motorcycles/storage/app/uploads//Color%20Chart/K3GJ/K3GJ-Black.png"
+          data-daimension="DIMENSIONS"
+          data-description="Weight:	124Kg"
+          data-description2="Power: 125cc"
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.ncxhonda.com/motorcycles/storage/app/uploads//Color%20Chart/K3GJ/K3GJ-Black.png"
+            alt="phone"
+          />
+          <div class="card-body">
+            <h3>Honda Dream</h3>
+            <h2>$2250.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          data-name="shoes"
+          data-title="Honda WAVE110"
+          data-price="$1699.00"
+          data-image="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Color%20Chart/K89W/Honda-WAVE-Blue.png"
+          data-daimension="DIMENSIONS"
+          data-description="Weight:	97Kg"
+          data-description2="Power: 110cc"
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.ncxhonda.com/motorcycles/storage/app/uploads/Color%20Chart/K89W/Honda-WAVE-Blue.png"
+            alt="shoes"
+          />
+          <div class="card-body">
+            <h3>Honda WAVE110</h3>
+            <h2>$1699.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+ 
+        <div
+          class="card"
+          data-name="phone"
+          data-title="Honda Rebel 1100"
+          data-price="$ 11,099.00"
+          data-image="https://www.centralfloridapowersports.com/cdn/shop/files/2025_Honda_Rebel_1100_DCT_SE_motorcycle_central_florida_powersports_kissimmee_orlando_dealer_1.png?v=1734640620"
+          data-daimension="DIMENSIONS"
+          data-description="Weight:	125Kg"
+          data-description2="Power: 150cc"
+          data-features="Year: 2025"
+          onclick="showPopup(this)"
+        >
+          <img
+            src="https://www.centralfloridapowersports.com/cdn/shop/files/2025_Honda_Rebel_1100_DCT_SE_motorcycle_central_florida_powersports_kissimmee_orlando_dealer_1.png?v=1734640620"
+            id="meguro-s3-img"
+            alt="phone"
+          />
+          <div class="card-body">
+            <h3>Honda Rebel 1100</h3>
+            <h2>$ 11,099.00</h2>
+            <button onclick="showPopup(this)">View Details</button>
+          </div>
+        </div>
+    <!-- Popup Modal -->
+    <div
+      class="modal fade"
+      id="productModal"
+      tabindex="-1"
+      aria-labelledby="productModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productModalTitle">Product Title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="popup-layout d-flex gap-3">
+              <img
+                id="productModalImage"
+                src=""
+                alt="Product Image"
+                class="popup-image img-fluid me-3"
+              />
+              <div class="popup-details">
+                <h4 id="productModalTitle" class="mb-2"></h4>
+                <h4 id="productModaldaimension"></h4>
+                <p id="productModalDescription"></p>
+                <p id="productModalDescription2"></p>
+                <p id="productModalFeatures"></p>
+                <label for="colorOptions" class="colorOptions">Color</label>
+                <div id="colorOptions" class="colorOptions">
+                  <span
+                    class="color-option red"
+                    onclick="selectColor('Red')"
+                  ></span>
+                  <span
+                    class="color-option blue"
+                    onclick="selectColor('Blue')"
+                  ></span>
+                  <span
+                    class="color-option black"
+                    onclick="selectColor('Black')"
+                  ></span>
+                </div>
+                <h5 id="productModalPrice"></h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" id="buttonbuy" class="btn btn-success">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- for Assesories -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Optionally add jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <section class="products">
+      <div class="container">
+        <h2 class="section-title" id="section-title">Bike Accessories</h2>
+        <div class="product-grid">
+          <div class="col-md-4">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://www.revzilla.com/product_images/1402/8033/sedici_sistema_ii_parlare_helmet_matte_black_750x750.jpg"
+                  alt="Helmet"
+                />
+                <div class="discount-badge">10%</div>
+                <i class="fas fa-heart heart-icon"></i>
+              </div>
+              <div class="product-details">
+                <h3 class="product-title">Helmets</h3>
+                <p>(Shoei RF-1400)</p>
+                <p class="product-price">
+                  $400 <span class="original-price">$499</span>
+                </p>
+                <button class="buy-now-btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://www.revzilla.com/product_images/0782/1096/dainese_steel_pro_gloves_750x750.jpg"
+                  alt="Gloves"
+                />
+                <div class="discount-badge">10%</div>
+                <i class="fas fa-heart heart-icon"></i>
+              </div>
+              <div class="product-details">
+                <h3 class="product-title">Gloves</h3>
+                <p>(Dainese Steel Pro)</p>
+                <p class="product-price">
+                  $699 <span class="original-price">$799</span>
+                </p>
+                <button class="buy-now-btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://www.thealleychicago.com/cdn/shop/products/Untitleddesign-2021-10-15T123237.455_720x.jpg?v=1723020474"
+                  alt="Jacket"
+                />
+                <div class="discount-badge">10%</div>
+                <i class="fas fa-heart heart-icon"></i>
+              </div>
+              <div class="product-details">
+                <h3 class="product-title">Leather Motorcycle Jacket</h3>
+                <p>(cafe style riding jacket)</p>
+                <p class="product-price">
+                  $400 <span class="original-price">$499</span>
+                </p>
+                <button class="buy-now-btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://www.formabootsusa.com/cdn/shop/products/TERRA_EVO_LOW_BLACK_WEB.jpg?v=1570931136&width=1080"
+                  alt="Jacket"
+                />
+                <div class="discount-badge">10%</div>
+                <i class="fas fa-heart heart-icon"></i>
+              </div>
+              <div class="product-details">
+                <h3 class="product-title">TERRA EVO LOW</h3>
+                <p>(Forma Terra Evo Low)</p>
+                <p class="product-price">
+                  $699 <span class="original-price">$799</span>
+                </p>
+                <button class="buy-now-btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://www.formabootsusa.com/cdn/shop/files/KneeGuardsTriFlex1024.jpg?v=1708027596&width=1080"
+                  alt="Jacket"
+                />
+                <div class="discount-badge">10%</div>
+                <i class="fas fa-heart heart-icon"></i>
+              </div>
+              <div class="product-details">
+                <h3 class="product-title">KNEE GUARDS</h3>
+                <p>(TRI-FLEX PRO)</p>
+                <p class="product-price">
+                  $99 <span class="original-price">$109</span>
+                </p>
+                <button class="buy-now-btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product-card">
+              <div class="product-image">
+                <img
+                  src="https://www.revzilla.com/product_images/2184/3487/alpinestars_tech_air5_system_dark_grey_750x750.jpg"
+                  alt="Jacket"
+                />
+                <div class="discount-badge">10%</div>
+                <i class="fas fa-heart heart-icon"></i>
+              </div>
+              <div class="product-details">
+                <h3 class="product-title">Alpinestars</h3>
+                <p>(Tech-Air 5 Airbag System)</p>
+                <p class="product-price">
+                  $699 <span class="original-price">$799</span>
+                </p>
+                <button class="buy-now-btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- for contact -->
+    <h1 id="contact-title">contact us</h1>
+    <div class="tes">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.801921519846!2d104.8927666757424!3d11.566053044131486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109510b2f4ba4d5%3A0x85115bd666252199!2sAsia%20Euro%20University!5e0!3m2!1sen!2skh!4v1736926969275!5m2!1sen!2skh"
+          width="600"
+          height="450"
+          class="iframe-style"
+          allowfullscreen=""
+          title="Asia Euro University Location"
+        ></iframe>
+      </div>
+
+      <form class="form-width">
+        <div data-mdb-input-init class="form-outline mb-2">
+          <input type="text" id="form4Example1" class="form-control" />
+          <label class="form-label" for="form4Example1">Name</label>
+        </div>
+        <div data-mdb-input-init class="form-outline mb-1">
+          <input type="email" id="form4Example2" class="form-control" />
+          <label class="form-label" for="form4Example2">Email address</label>
+        </div>
+        <div data-mdb-input-init class="form-outline mb-2">
+          <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+          <label class="form-label" for="form4Example3">Message</label>
+        </div>
+        <div class="form-check d-flex justify-content-center mb-2">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            id="form4Example4"
+            checked
+          />
+          <label class="form-check-label" for="form4Example4"
+            >Send me a copy of this message</label
+          >
+        </div>
+
+        <button
+          data-mdb-ripple-init
+          type="submit"
+          class="btn btn-success btn-block mb-4"
+        >
+          Send
+        </button>
+      </form>
+      <a
+        href="https://www.google.com/maps/place/Asia+Euro+University/@11.566053,104.8927667,17z/data=!3m1!4b1!4m6!3m5!1s0x3109510b2f4ba4d5:0x85115bd666252199!8m2!3d11.5660478!4d104.8953416!16s%2Fm%2F0cp4nmx!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D"
+        ><button class="b-map"><h4>View on Google Maps</h4></button></a
+      >
+    </div>
+    <script src="javascript/style.JS"></script>
+    <!-- Latest compiled and minified CSS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script> -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset" title="Google">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram" title="instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin" title="linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github" title="github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>MOTO SHOP
+              </h6>
+              <p>
+                Moto shop, Co., Ltd. is one of the top famous and largest companies
+                and the first leading company in motorcycle industry in
+                Cambodia.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4 text-decoration-none">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Laravel</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none"
+                  >Settings</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Cambodai,Phnom Penh</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+          >MOTO SHOP @gmail.com</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>
